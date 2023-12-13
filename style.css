@@ -1,0 +1,340 @@
+:root {
+  --main-bg-color: #05051d;
+  --main-primary-color: linear-gradient(
+    136deg,
+    #f9a65a 4.56%,
+    #ff74ad 49.04%,
+    #9a6bfe 92.6%
+  );
+  --main-secondary-color: #A6A6AF;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: var(--main-bg-color);
+}
+
+a {
+  text-decoration: none !important;
+}
+
+a:hover {
+  text-decoration: none !important;
+}
+
+li {
+  list-style: none !important;
+}
+
+/* <!-- ------------------------- Navbar bar ------------------------- --> */
+.navbar {
+  margin: 0px 80px !important;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  border: 1px solid #f9a65a;
+  background: #0f0f26;
+  backdrop-filter: blur(4px);
+  padding: 16px 24px !important;
+}
+.navbar-nav {
+  border-radius: 100px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.08);
+  height: 44px;
+  padding: 24px;
+  justify-content: center;
+  align-items: center;
+}
+nav li a {
+  color: rgba(255, 255, 255, 0.64) !important;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: -0.32px;
+}
+nav li:first-child {
+  margin-left: 24px;
+}
+nav li:not(:last-child) {
+  margin-right: 32px;
+}
+.widget {
+  padding: 0;
+}
+.sign_btn {
+  color: #a5a6a9;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%; /* 16px */
+  letter-spacing: -0.32px;
+  margin: auto 20px auto 0;
+}
+
+.premium_btn {
+  color: #121212;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: -0.32px;
+  padding: 12px 16px;
+  align-items: flex-start;
+  gap: 8px;
+  border-radius: 100px;
+  background: #fff;
+  border: 0;
+}
+
+.fa-bars,
+.fa-close {
+  background: var(--main-primary-color) !important;
+}
+.fa-close {
+  font-size: 1.7rem !important;
+}
+/* <!--  nav for mbl --> */
+
+.nav_resp {
+  background: #0f0f26 !important;
+}
+.nav_resp li {
+  color: rgba(255, 255, 255, 0.64) !important;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: -0.32px;
+  margin: 10px 0;
+}
+
+
+
+
+@media only screen and (max-width: 1250px) {
+  .navbar {
+    margin: 0px 20px !important;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .navbar {
+    margin: 0px 50px !important;
+  }
+  .navbar .widget_div{
+    display: none !important;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .navbar {
+    margin: 0px 30px !important;
+  }
+}
+/* <!-- ------------------------- hero part ------------------------- --> */
+
+.container{
+  margin: 0 80px !important;
+}
+.hero {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 4rem !important;
+  background: var(--main-bg-color);
+}
+
+.overlay_shape {
+  background-image: url("images/bg_pattern_decorative.png");
+  background-repeat: no-repeat;
+  height: 768px;
+  flex-shrink: 0;
+  background-position: -35px -50px;
+  padding-top:32px;
+}
+.next_gen_btn{
+border-radius: 100px;
+border: 1px solid #494A4D;
+background: rgba(41, 41, 41, 0.16);
+box-shadow: 0px -1px 4px 0px rgba(255, 255, 255, 0.12) inset;
+padding: 9px 16px;
+font-family: Inter;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: 100%; /* 14px */
+letter-spacing: -0.41px;
+background: linear-gradient(180deg, #FFF 0%, rgba(255, 255, 255, 0.00) 214.29%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+.hero h1{
+  margin-top: 24px;
+  color: rgba(255, 255, 255, 0.90);
+font-family: Switzer;
+font-size: 52px;
+font-style: normal;
+font-weight: 500;
+line-height: 130%; /* 67.6px */
+text-transform: capitalize;
+}
+.hero h1 span{
+  background: var(--main-primary-color);
+  background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+font-family: Switzer;
+font-size: 52px;
+font-style: normal;
+font-weight: 500;
+line-height: 130%;
+text-transform: capitalize;
+}
+.hero p{
+  color: var(--main-secondary-color);
+font-family: Inter;
+font-size: 18px;
+font-style: normal;
+font-weight: 500;
+line-height: 145%; /* 26.1px */
+letter-spacing: -0.41px;
+}
+.hero_btn{
+  margin-top: 40px;
+  padding: 16px 20px;
+  border-radius: 100px;
+border: 1px solid rgba(255, 255, 255, 0.32);
+background: var(--main-primary-color);
+box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05), 0px -3px 24px 0px rgba(5, 5, 29, 0.40) inset;
+color: #FFF;
+font-family: Inter;
+font-size: 18px;
+font-style: normal;
+font-weight: 500;
+line-height: 100%; /* 18px */
+letter-spacing: -0.36px;
+}
+
+
+
+.common {
+  position: absolute;
+  height: 1px;
+  width: 22px;
+  background-color: #9A6BFE;
+  opacity: .4;
+  border-radius: 50px;
+  transition: 0.3s ease;
+  display: inline;
+}
+.top_line{
+  left: 0px;
+  top: -6px;
+}
+.top_second_line{
+  left: 0px;
+  top: -8px;
+}
+.bottom_line{
+  left: 0px;
+  top: 6px; 
+}
+.bottom_second_line{
+  left: 0px;
+  top: 8px; 
+}
+.left_line{
+  top:0px;
+  left: -9px;
+  transform: rotate(90deg);
+}
+.left_second_line{
+  top:0px;
+  left: -11px;
+  transform: rotate(90deg);
+}
+.right_line{
+  top:0px;
+  left: 9px;
+  transform: rotate(90deg);
+}
+.right_second_line{
+  top:0px;
+  left: 11px;
+  transform: rotate(90deg);
+}
+
+.check_icon{
+  position: absolute;
+  left: 4px;
+  top: -8px;
+  display: inline;
+  }
+  
+.check_icon_text{
+  color: #A6A6AF;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%; /* 16px */
+  letter-spacing: -0.41px;
+  margin-left: 40px;
+}
+
+.grid-container {
+  display: grid;
+  gap: 18px;
+}
+
+.grid-item {
+  /* padding: 5px; */
+}
+
+.item1 {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.item2 {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+}
+.item3 {
+  grid-column:3;
+  /* grid-row:1; */
+}
+.item4 {
+  grid-column:1;
+  grid-row: 2
+}
+.item5 {
+  grid-column:2;
+  grid-row: 2;
+}
+.item6 {
+  grid-column:3;
+  grid-row: 2 / span 2;
+}
+.item7 {
+  grid-column:1;
+  /* grid-row:3; */
+}
+.item8 {
+  grid-column:2;
+  grid-row: 3 ;
+}
+.item9 {
+  grid-column:3;
+  grid-row: 3 ;
+}
