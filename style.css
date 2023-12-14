@@ -17,6 +17,7 @@ html {
   scroll-behavior: smooth;
 }
 body{
+  overflow-x: hidden;
   background-color: var(--main-bg-color) !important;
 }
 
@@ -401,7 +402,7 @@ p {
 
 .img_gen {
   background-color: var(--main-bg-color);
-  padding: 10rem 0;
+  /* padding: 10rem 0; */
 }
 
 .box1{
