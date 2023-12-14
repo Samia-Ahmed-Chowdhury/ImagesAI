@@ -497,7 +497,7 @@ box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05), 0px -3px 24px 0px rgba(5, 5,
   background-image: url("images/g1.svg");
   background-repeat: no-repeat;
   background-position: 450px 50px;
-padding-bottom: 8rem;
+padding-bottom: 6rem;
 }
 
 .right_div>div{
@@ -606,7 +606,7 @@ padding:1.5rem 2rem !important;
 .right_div .img_list img{
   border-radius: 0.5rem;
 }
-.right_div .inputArea{
+ .inputArea{
   display: flex;
   justify-content: space-between;
   width: 428px;
@@ -618,7 +618,7 @@ box-shadow: 0px -1.06px 8.481px 0px rgba(0, 0, 0, 0.08) inset, 0px 4.24px 8.481p
 backdrop-filter: blur(4px);
 padding: 8px 14px;
 }
-.right_div .inputArea>input{
+ .inputArea>input{
   background: none !important;
   border: none !important;
 }
@@ -642,4 +642,18 @@ border-radius: 100px;
 border: 1px solid rgba(255, 255, 255, 0.32);
 background: var(--main-primary-color);
 box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05), 0px -3px 24px 0px rgba(5, 5, 29, 0.40) inset;
+}
+
+
+.tv_card2 img{
+  border-radius: 6.918px;
+}
+.ss2{
+  transform: translate(40px,-15px);
+}
+
+.s{
+  background-image: url("images/g1.svg");
+  background-repeat: no-repeat;
+  background-position: -90px -10px;
 }
