@@ -164,15 +164,9 @@ nav li:not(:last-child) {
 
 @media only screen and (max-width: 450px) {
   .navbar {
-<<<<<<< HEAD
     margin: 0px 15px !important;
   }
 } */
-=======
-    margin: 0px 5px !important;
-  }
-}
->>>>>>> 96661026b63ce2d7f0a0b4fe4edf91fffe9225ef
 
 /* <!-- ------------------------- hero part ------------------------- --> */
 
@@ -406,13 +400,11 @@ p {
 
 .img_gen {
   background-color: var(--main-bg-color);
-  padding: 5rem 0;
+  padding: 10rem 0;
 }
 
-.img_gen>div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.img_gen>div>div>div{
+  margin-bottom: 3rem;
 }
 
 .img_gen .next_gen_btn {
@@ -500,6 +492,14 @@ border: 1px solid var(--Images-AI, #F9A65A);
 background: #212734;
 box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05), 0px -3px 24px 0px rgba(5, 5, 29, 0.40) inset;
 }
+
+.d{
+  background-image: url("images/g1.svg");
+  background-repeat: no-repeat;
+  background-position: 450px 50px;
+padding-bottom: 8rem;
+}
+
 .right_div>div{
   display: flex !important;
   align-items: center;
@@ -515,7 +515,20 @@ border-radius: 0.3125rem;
 border: 1px solid #3D3D51;
 background: #1E1E34;
 }
-.right_div .input_div .edit_icon{
+.right_div .output_div{
+  display: flex;
+  width: 10rem;
+  padding: 0.375rem 0.5rem;
+  align-items: center;
+  gap: 0.375rem;
+  border-radius:5px ;
+ border-width: .6px;
+ border-style: solid;
+ border-image-slice: 1;
+ border-image-source:  var(--main-primary-color);
+  background: #1E1E34;
+}
+.right_div .input_div .edit_icon, .right_div .output_div .edit_icon{
   width: 1.75rem;
   height: 1.4rem;
   display: flex;
@@ -526,7 +539,7 @@ align-items: center;
 border-radius: 0.25rem;
 background: #303044;
 }
-.right_div .input_div li{
+.right_div .input_div li, .right_div .output_div li{
   color: #A8A8B1;
 font-family: Inter;
 font-size: 0.625rem !important;
@@ -592,4 +605,41 @@ padding:1.5rem 2rem !important;
 }
 .right_div .img_list img{
   border-radius: 0.5rem;
+}
+.right_div .inputArea{
+  display: flex;
+  justify-content: space-between;
+  width: 428px;
+height: 52px;
+border-radius: 8px !important;
+border: 1.147px solid rgba(255, 255, 255, 0.10) !important;
+background: rgba(33, 39, 52, 0.80) !important;
+box-shadow: 0px -1.06px 8.481px 0px rgba(0, 0, 0, 0.08) inset, 0px 4.24px 8.481px 0px rgba(0, 0, 0, 0.08) !important;
+backdrop-filter: blur(4px);
+padding: 8px 14px;
+}
+.right_div .inputArea>input{
+  background: none !important;
+  border: none !important;
+}
+::placeholder {
+  color: rgba(255, 255, 255, 0.80);
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%; /* 14px */
+}
+.inputArea button{
+  color: var(--Base-White, #FFF);
+font-family: Inter;
+font-size: 12px;
+font-style: normal;
+font-weight: 500;
+line-height: 100%; /* 12px */
+letter-spacing: -0.24px;
+border-radius: 100px;
+border: 1px solid rgba(255, 255, 255, 0.32);
+background: var(--main-primary-color);
+box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05), 0px -3px 24px 0px rgba(5, 5, 29, 0.40) inset;
 }
