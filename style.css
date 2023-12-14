@@ -588,7 +588,7 @@ background: linear-gradient(90deg, #FF98C2 0%, #FF74AD 100%);
 .right_div .e5{
   background: #9A6BFE;
 }
-.right_div .tv_card{
+.tv_card{
   margin-top: 1.5rem !important;
   display: inline-flex;
 padding: 0.5rem;
@@ -599,7 +599,7 @@ border-radius: 1rem;
 background: rgba(255, 255, 255, 0.06);
 backdrop-filter: blur(4.5px);
 }
-.right_div .tv_card>div{
+.tv_card>div{
   display: flex;
 padding: 0.5rem;
 flex-direction: column;
@@ -766,4 +766,39 @@ border-radius: 100px;
 border: 0.816px solid rgba(255, 255, 255, 0.32);
 background:var(--main-primary-color);
 box-shadow: 0px 0.816px 1.633px 0px rgba(16, 24, 40, 0.05), 0px -2.449px 19.592px 0px rgba(5, 5, 29, 0.40) inset;
+}
+
+/* <!-- -------------------------END  ---------Image Generator  part ------------------------- --> */
+
+/* <!-- -------------------------  ---------Features  part ------------------------- --> */
+.features{
+  margin: 13rem 0;
+}
+.features_box1{
+  border-radius: 0.875rem;
+border: 1px solid #242439;
+background: #0F0F26;
+box-shadow: 0px 4px 24px 0px #061C30;
+width: 37.5rem;
+/* height: 32.875rem; */
+flex-shrink: 0;
+padding: 2rem;
+}
+
+h6{
+  color: #FFF !important;
+font-family: Inter;
+font-size: 1.3125rem !important;
+font-style: normal;
+font-weight: 500;
+line-height: 100%; /* 1.3125rem */
+letter-spacing: -0.02625rem;
+text-transform: capitalize;
+}
+.features .tv_card{
+  margin-top: 7px !important;
+}
+.features .tv_card>div>div{
+  background: rgba(255, 255, 255, 0.10);
+backdrop-filter: blur(2px);
 }
