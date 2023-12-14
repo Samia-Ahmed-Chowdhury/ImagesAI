@@ -32,7 +32,7 @@ li {
 
 /* <!-- ------------------------- Navbar bar ------------------------- --> */
 .navbar {
-  margin: 0px 80px !important;
+  /* margin: 0px 80px !important; */
   justify-content: center;
   align-items: center;
   border: 1px solid #f9a65a;
@@ -130,9 +130,16 @@ nav li:not(:last-child) {
   margin: 10px 0;
 }
 
+@media only screen and (max-width: 991px) {
+  .navbar .widget_div {
+    display: none !important;
+  }
+  .grid{
+    margin-top: 6rem;
+  }
+}
 
-
-
+/* 
 @media only screen and (max-width: 1250px) {
   .navbar {
     margin: 0px 20px !important;
@@ -157,9 +164,15 @@ nav li:not(:last-child) {
 
 @media only screen and (max-width: 450px) {
   .navbar {
+<<<<<<< HEAD
+    margin: 0px 15px !important;
+  }
+} */
+=======
     margin: 0px 5px !important;
   }
 }
+>>>>>>> 96661026b63ce2d7f0a0b4fe4edf91fffe9225ef
 
 /* <!-- ------------------------- hero part ------------------------- --> */
 
@@ -173,6 +186,7 @@ nav li:not(:last-child) {
   background-size: cover;
   background-repeat: no-repeat;
   background: var(--main-bg-color);
+  padding: 0 20px;
 }
 
 .overlay_shape {
