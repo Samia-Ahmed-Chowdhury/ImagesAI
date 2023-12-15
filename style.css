@@ -14,6 +14,7 @@
 }
 
 html {
+  overflow-x: hidden;
   scroll-behavior: smooth;
 }
 
@@ -999,29 +1000,38 @@ h6 {
   bottom: -50%;
   right: 30%
 }
+
 .img_gen_card2_g1 {
-  top:-70%; right:-5%
+  top: -70%;
+  right: -5%
 }
 
 .img_gen_card2_g2 {
-  bottom:-30%; right:-10%
+  bottom: -30%;
+  right: -10%
 }
 
 .img_gen_card2_g3 {
-  top:-30%; right:-40%
+  top: -30%;
+  right: -40%
 }
+
 .img_gen_card3_g1 {
-  bottom: -50%; right:-40%
+  bottom: -50%;
+  right: -40%
 }
 
 .img_gen_card3_g2 {
-  bottom:-50%; right:-20%
+  bottom: -50%;
+  right: -20%
 }
 
 .img_gen_card3_g3 {
-  bottom:-50%; right:30%
+  bottom: -50%;
+  right: 30%
 }
-.fp{
+
+.fp {
   width: 40.875rem;
 }
 
@@ -1035,12 +1045,16 @@ h6 {
     width: 100% !important;
   }
 
-  .inputArea,.tv_card3,.tv_card3_header {
+  .inputArea,
+  .tv_card3,
+  .tv_card3_header {
     width: 100% !important;
   }
+
   .tv_card3 {
-     height: 100% !important;
+    height: 100% !important;
   }
+
   .right_div {
     margin-top: 30px !important;
   }
@@ -1048,10 +1062,12 @@ h6 {
   .left_div p {
     width: auto !important;
   }
+
   .features_box1 {
-   width: auto !important
+    width: auto !important
   }
-  .fp{
+
+  .fp {
     width: auto !important;
   }
 }
